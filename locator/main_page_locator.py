@@ -1,4 +1,4 @@
 from selenium.webdriver.common.by import By
 
 class MainPageLocator:
-    LOCATOR_HEADER_LOGO = (By.CLASS_NAME, 'header__logo')
+    LOCATOR_SING_IN_BUTTON = (By.LINK_TEXT, 'Вход и регистрация')
