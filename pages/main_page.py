@@ -3,8 +3,7 @@ from locator.main_page_locator import MainPageLocator
 
 
 class MainPage(BasePage):
-
-    def open_regional_page(self):
+    def click_sing_in_button(self):
         sing_in_button = self.find_element(
             MainPageLocator.LOCATOR_SING_IN_BUTTON
         )
