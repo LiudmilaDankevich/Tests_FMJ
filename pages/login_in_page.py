@@ -13,5 +13,7 @@ class LoginPage(BasePage):
         passwd_field = self.find_element(LoginPageLocator.LOCATOR_PASSWD_FIELD)
         passwd_field.send_keys(passwd)
         sleep(2)
+        remember_me = self.find_element(LoginPageLocator.LOCATOR_REMEMBER_ME)
+        remember_me.click()
         sing_in_button = self.find_element(LoginPageLocator.LOCATOR_SING_IN_BUTTON)
         sing_in_button.click()
