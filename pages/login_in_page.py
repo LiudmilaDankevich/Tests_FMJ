@@ -21,6 +21,6 @@ class LoginPage(BasePage):
 
     def click_registration_applicant_button(self):
         registration_applicant_button = self.find_element(
-            MainPageLocator.LOCATOR_REGISTRATION_APPLICANT_BUTTON
+            LoginPageLocator.LOCATOR_REGISTRATION_APPLICANT_BUTTON
         )
         registration_applicant_button.click()
