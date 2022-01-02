@@ -1,5 +1,6 @@
 from pages.base_page import BasePage
 from pages.main_page import MainPage
+from locator.main_page_locator import MainPageLocator
 from locator.login_in_locator import LoginPageLocator
 from time import sleep
 
@@ -13,7 +14,13 @@ class LoginPage(BasePage):
         passwd_field = self.find_element(LoginPageLocator.LOCATOR_PASSWD_FIELD)
         passwd_field.send_keys(passwd)
         sleep(2)
-        remember_me = self.find_element(LoginPageLocator.LOCATOR_REMEMBER_ME)
-        remember_me.click()
+        # remember_me = self.find_element(LoginPageLocator.LOCATOR_REMEMBER_ME)
+        # remember_me.click()
         sing_in_button = self.find_element(LoginPageLocator.LOCATOR_SING_IN_BUTTON)
         sing_in_button.click()
+
+    def click_registration_applicant_button(self):
+        registration_applicant_button = self.find_element(
+            MainPageLocator.LOCATOR_REGISTRATION_APPLICANT_BUTTON
+        )
+        registration_applicant_button.click()

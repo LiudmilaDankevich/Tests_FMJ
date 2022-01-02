@@ -8,3 +8,8 @@ class MainPage(BasePage):
             MainPageLocator.LOCATOR_SING_IN_BUTTON
         )
         sing_in_button.click()
+    def click_registration_applicant_button(self):
+        registration_applicant_button = self.find_element(
+            MainPageLocator.LOCATOR_REGISTRATION_APPLICANT_BUTTON
+        )
+        registration_applicant_button.click()
