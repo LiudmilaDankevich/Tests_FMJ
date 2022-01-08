@@ -44,6 +44,12 @@ class RegistrationApplicatorForm(BasePage):
             RegistrationApplicantLocator.LOCATOR_RADIO_BUTTON_FOUR
         )
         radio_button_four.click()
+        sleep(3)
+
+        register = self.find_element(
+            RegistrationApplicantLocator.LOCATOR_REGISTRATION_BUTTON
+        )
+        register.click()
 
 
 

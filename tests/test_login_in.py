@@ -12,7 +12,7 @@ def test_click_sing_in_button(browser):
     sleep(2)
     login_page = LoginPage(browser)
     sleep(2)
-    login_page.login('liud@gmail.com', '1111')
+    login_page.login('Born@gmail.com', '1111')
     sleep(2)
     # personal_account_page = PersonalAccountPage(browser)
     # sleep(2)
