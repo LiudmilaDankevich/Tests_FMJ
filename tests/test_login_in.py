@@ -11,6 +11,7 @@ def test_click_sing_in_button(browser):
     main_page.click_sing_in_button()
     sleep(2)
     login_page = LoginPage(browser)
+    login_page.should_be_login_page()
     sleep(2)
     login_page.login('Born@gmail.com', '1111')
     sleep(2)

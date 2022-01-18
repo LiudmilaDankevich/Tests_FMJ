@@ -7,6 +7,18 @@ from time import sleep
 
 class LoginPage(BasePage):
 
+    def should_be_login_page(self):
+        self.login_form_is_present()
+        self.auth_text_is_present()
+
+    def login_form_is_present(self):
+        self.find_element(LoginPageLocator.LOCATOR_LOGIN_FORM)
+
+    def auth_text_is_present(self):
+        auth_text = self.find_element(LoginPageLocator.LOCATOR_AUTH_TEXT).text
+        check_text = 'Вход'
+        assert auth_text == check_text, f'{auth_text} is not eq {check_text}'
+
     def login(self, email, passwd):
         email_field = self.find_element(LoginPageLocator.LOCATOR_EMAIL_FIELD)
         email_field.send_keys(email)

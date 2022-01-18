@@ -9,4 +9,8 @@ class LoginPageLocator:
     LOCATOR_REGISTRATION_APPLICANT_BUTTON = (
         By.XPATH, '//*[@id="js-login-modal"]/div/div/div/section/div[2]/div/div[1]/a'
     )
+    LOCATOR_LOGIN_FORM =(By.XPATH,'//*[@id="js-login-modal"]/div/div/div/section/div[1]')
+    LOCATOR_AUTH_TEXT = (By.XPATH,
+                         '//*[@id="js-login-modal"]/div/div/div/section/div[1]/div[1]'
+                         )
 
