@@ -9,17 +9,7 @@ def test_click_sing_in_button(browser):
     sleep(2)
     main_page.open_base_page()
     sleep(2)
-    main_page.click_sing_in_button()
-    # main_page.open_regional_page()
-    login_page = LoginPage(browser)
-    login_page.login('liud@gmail.com', '1111')
-
-# def login_in_form(browser):
-#     main_page = MainPage(browser)
-#     main_page.open_base_page()
-#     sleep(5)
-#     login_page = LoginPage(browser)
-#     sleep(5)
-#     login_page.login('liud@gmail.com', '1111')
-#     sleep(5)
+    main_page.should_be_main_page()
+    # confirm = browser.switch_to.alert
+    # confirm.accept()
 
