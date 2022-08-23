@@ -23,6 +23,12 @@ class BasePage:
 
 
 
+
+
+
+
+
+
     def find_elements(self, locator: tuple, time=10):
         return WebDriverWait(self.driver, time).until(
             EC.presence_of_all_elements_located(locator),
